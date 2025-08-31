@@ -17,10 +17,20 @@ namespace api.Controller
             _tableRepo = tableRepo;
         }
 
+        [HttpGet("CaptureTable")]
+        public async Task<IActionResult> CaptureTable()
+        {
+            var result = await _tableRepo.CaptureTable();
+
+            return Ok(result);
+        }
+
         [HttpGet("GetMyHand")]
         public IActionResult GetMyHand()
         {
-            _tableRepo.GetHand();
+            var result = _tableRepo.GetHand();
+
+            return Ok(result);
         }
     }
 }

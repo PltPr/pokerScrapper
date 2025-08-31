@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Dto;
 
 namespace api.Interface
 {
     public interface ITableRepository
     {
-        string[] GetHand(Bitmap bmp);
+        Task<CaptureDto> CaptureTable();
+        string[] GetHand();
     }
 }

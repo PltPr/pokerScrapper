@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Dto;
 using api.Interface;
 
 namespace api.Service
@@ -14,10 +15,51 @@ namespace api.Service
         {
             _snapshotRepo = snapshotRepo;
         }
-        public string[] GetHand(Bitmap bmp)
+
+        public async Task<CaptureDto> CaptureTable()
+        {
+            var bounds = new Rectangle(260, 0, 1400, 1030);
+
+            await Task.Delay(2000);
+
+            using var bmp = new Bitmap(bounds.Width, bounds.Height);
+
+            using (var g = Graphics.FromImage(bmp))
+            {
+                g.CopyFromScreen(bounds.Left, bounds.Top, 0, 0, bmp.Size);
+            }
+
+            var projectFolder = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\"));
+            var filePath = Path.Combine(projectFolder,"table","ggpoker.png");
+
+            bmp.Save(filePath, ImageFormat.Png);
+
+            return new CaptureDto
+            {
+                Status = "Captured",
+                FilePath = filePath,
+                Resolution = $"{bmp.Width}x{bmp.Height}",
+                Timestamp = DateTime.UtcNow
+            };
+        }
+
+        public string[] GetHand()
         {
             var currFolder = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\"));
+            var screenshotPath = Path.Combine(currFolder,"table", "ggpoker.png");
             var projectFolder = Path.Combine(currFolder, "table", "myhand");
+
+            if (!System.IO.File.Exists(screenshotPath))
+                throw new Exception("Screenshot not found");
+
+            using var bmp = new Bitmap(screenshotPath);
+
+            var bothCardsRect = new Rectangle(600,745,140,100);
+            using var bothCardBmp = bmp.Clone(bothCardsRect, bmp.PixelFormat);
+            var bothCardPath = Path.Combine(projectFolder, "bothcard.png");
+            bothCardBmp.Save(bothCardPath, ImageFormat.Png);
+
+            
 
             var firstCardValue = new Rectangle(607, 753, 41, 52);
             var firstCardSymbol = new Rectangle(611, 801, 41, 40);
