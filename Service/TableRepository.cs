@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using api.Dto;
 using api.Interface;
 
+
 namespace api.Service
 {
     public class TableRepository : ITableRepository
@@ -91,6 +92,58 @@ namespace api.Service
             string card2result = string.Concat(stringcard2val, stringcard2symbol);
 
             return new string[] { card1result, card2result };
+        }
+
+        public string[] GetTableCards()
+        {
+            var currFolder = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\"));
+            var screenshotPath = Path.Combine(currFolder, "table", "ggpoker.png");
+            var projectFolder = Path.Combine(currFolder, "table", "tablecards");
+            var cards = new List<string>();
+
+            if (!System.IO.File.Exists(screenshotPath))
+                throw new Exception("Screenshot not found");
+
+            using var bmp = new Bitmap(screenshotPath);
+
+            var tableCards = new Rectangle[]
+            {
+                new Rectangle(410, 415, 42, 82),
+                new Rectangle(530, 415, 42, 82),
+                new Rectangle(650, 415, 42, 82),
+                new Rectangle(770, 415, 42, 82),
+                new Rectangle(890, 415, 42, 82)
+            };
+
+            int i = 1;
+
+            foreach (var x in tableCards)
+            {
+                using var card = bmp.Clone(x, bmp.PixelFormat);
+
+                var tempRectVal = new Rectangle(x.X, x.Y, 37, 45);
+                using var cardValue = bmp.Clone(tempRectVal, bmp.PixelFormat);
+                var cardValuePath = Path.Combine(projectFolder, $"cardValue{i}.png");
+                cardValue.Save(cardValuePath, ImageFormat.Png);
+                var value = _snapshotRepo.RecognizeValueWithTesseract(cardValuePath);
+
+                var tempRectSymb = new Rectangle(x.X, x.Y + 45, 42, 37);
+                using var cardSymbol = bmp.Clone(tempRectSymb, bmp.PixelFormat);
+                var cardSymbolPath = Path.Combine(projectFolder, $"cardSymbol{i}.png");
+                cardSymbol.Save(cardSymbolPath, ImageFormat.Png);
+                var symbol = _snapshotRepo.RecognizeSymbol(cardSymbolPath, "Table");
+
+                if (!string.IsNullOrEmpty(symbol) && !string.IsNullOrEmpty(value))
+                {
+                    var result = string.Concat(value, symbol);
+                    cards.Add(result);
+                }
+                i++;
+
+
+            }
+            return cards.ToArray();
+
         }
     }
 }

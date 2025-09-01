@@ -29,10 +29,15 @@ namespace api.Service
             {
                 templateFolder = Path.Combine("Templates", "SecoundCardTemplates");
             }
+            else if (type == "Table")
+            {
+                templateFolder = Path.Combine("Templates", "TableTemplates");
+            }
 
             var templates = new Dictionary<string, string>
             {
                 {"pik",Path.Combine(templateFolder,"pik.png")},
+                {"pik2",Path.Combine(templateFolder,"pik2.png")},
                 {"kier",Path.Combine(templateFolder,"kier.png")},
                 {"karo",Path.Combine(templateFolder,"karo.png")},
                 {"trefl",Path.Combine(templateFolder,"trefl.png")}
@@ -57,8 +62,18 @@ namespace api.Service
                     bestMatch = x.Key;
                 }
             }
+            if (maxScore < 0.7) return String.Empty;
 
-            return bestMatch;
+            var validator = new List<string>
+            {
+                "pik","kier","karo","trefl"
+            };
+
+            var match = validator.FirstOrDefault(v => bestMatch.Contains(v));
+
+            
+
+            return match ?? string.Empty;
         }
 
         public string RecognizeValueWithTesseract(string filePath)
@@ -68,16 +83,23 @@ namespace api.Service
                 "eng",
                 EngineMode.Default
             );
-            ocr.SetVariable("tessedit_char_whitelist", "23456789QKAJ");
+            ocr.SetVariable("tessedit_char_whitelist", "0123456789QKAJ");
             using var pix = Pix.LoadFromFile(filePath);
 
-            using var page = ocr.Process(pix, PageSegMode.SingleChar);
-            string value = page.GetText();
+            using var page = ocr.Process(pix, PageSegMode.SingleWord);
+            string value = page.GetText().Trim();
+
+            value = value.Replace(" ", "").Replace("\n", "");
+            if (value == "0" || value == "1")
+                return string.Empty;
+
+            if (value.Length >= 2 && value != "10")
+                return value[0].ToString();
 
             if (!string.IsNullOrWhiteSpace(value))
-            {
-                return value.Trim()[0].ToString();
-            }
+                {
+                    return value;
+                }
             return string.Empty;
             
         }

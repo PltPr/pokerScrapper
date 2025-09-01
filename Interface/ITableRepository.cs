@@ -10,5 +10,7 @@ namespace api.Interface
     {
         Task<CaptureDto> CaptureTable();
         string[] GetHand();
+        string[] GetTableCards();
+        
     }
 }

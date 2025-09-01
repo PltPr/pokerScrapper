@@ -29,7 +29,14 @@ namespace api.Controller
         public IActionResult GetMyHand()
         {
             var result = _tableRepo.GetHand();
+            var xd = _tableRepo.GetTableCards();
 
+            return Ok(result);
+        }
+        [HttpGet("GetTableCards")]
+        public IActionResult GetTableCards()
+        {
+            var result = _tableRepo.GetTableCards();
             return Ok(result);
         }
     }
