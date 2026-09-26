@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\pokerScrapper\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\calculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\calculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\montecarloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\montecarloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\snapshotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\snapshotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\controller\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:controller\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\calculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\calculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\interface\\imontecarloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:interface\\imontecarloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\interface\\icalculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +43,12 @@
       "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\models\\cardenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:models\\cardenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\models\\handrank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:models\\handrank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\models\\handvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:models\\handvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\interface\\icardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\dto\\capturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:dto\\capturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\service\\snapshotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|solutionrelative:service\\snapshotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED562DFE-B9EF-5F88-771F-EBF333E4D08F}|api.csproj|c:\\pokerscrapper\\templates\\tabletemplates\\karo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
@@ -118,89 +122,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HandRank.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Models\\HandRank.cs",
-              "RelativeDocumentMoniker": "Models\\HandRank.cs",
-              "ToolTip": "C:\\pokerScrapper\\Models\\HandRank.cs",
-              "RelativeToolTip": "Models\\HandRank.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T10:01:46.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HandValue.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Models\\HandValue.cs",
-              "RelativeDocumentMoniker": "Models\\HandValue.cs",
-              "ToolTip": "C:\\pokerScrapper\\Models\\HandValue.cs",
-              "RelativeToolTip": "Models\\HandValue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T10:01:32.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICalculateService.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Interface\\ICalculateService.cs",
-              "RelativeDocumentMoniker": "Interface\\ICalculateService.cs",
-              "ToolTip": "C:\\pokerScrapper\\Interface\\ICalculateService.cs",
-              "RelativeToolTip": "Interface\\ICalculateService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T10:01:04.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ICardService.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Interface\\ICardService.cs",
-              "RelativeDocumentMoniker": "Interface\\ICardService.cs",
-              "ToolTip": "C:\\pokerScrapper\\Interface\\ICardService.cs",
-              "RelativeToolTip": "Interface\\ICardService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T09:36:26.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CardDto.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Dto\\CardDto.cs",
-              "RelativeDocumentMoniker": "Dto\\CardDto.cs",
-              "ToolTip": "C:\\pokerScrapper\\Dto\\CardDto.cs",
-              "RelativeToolTip": "Dto\\CardDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T09:34:39.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CaptureDto.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Dto\\CaptureDto.cs",
-              "RelativeDocumentMoniker": "Dto\\CaptureDto.cs",
-              "ToolTip": "C:\\pokerScrapper\\Dto\\CaptureDto.cs",
-              "RelativeToolTip": "Dto\\CaptureDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T09:34:27.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "SnapshotRepository.cs",
               "DocumentMoniker": "C:\\pokerScrapper\\Service\\SnapshotRepository.cs",
               "RelativeDocumentMoniker": "Service\\SnapshotRepository.cs",
@@ -213,85 +139,97 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "TableController.cs",
               "DocumentMoniker": "C:\\pokerScrapper\\Controller\\TableController.cs",
               "RelativeDocumentMoniker": "Controller\\TableController.cs",
               "ToolTip": "C:\\pokerScrapper\\Controller\\TableController.cs",
               "RelativeToolTip": "Controller\\TableController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAiwEsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-25T21:21:10.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CardEnum.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Models\\CardEnum.cs",
-              "RelativeDocumentMoniker": "Models\\CardEnum.cs",
-              "ToolTip": "C:\\pokerScrapper\\Models\\CardEnum.cs",
-              "RelativeToolTip": "Models\\CardEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T21:07:07.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\pokerScrapper\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\pokerScrapper\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T09:41:30.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CalculateService.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Service\\CalculateService.cs",
-              "RelativeDocumentMoniker": "Service\\CalculateService.cs",
-              "ToolTip": "C:\\pokerScrapper\\Service\\CalculateService.cs",
-              "RelativeToolTip": "Service\\CalculateService.cs",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAqwAQBAAAkAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IMonteCarloService.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Interface\\IMonteCarloService.cs",
+              "RelativeDocumentMoniker": "Interface\\IMonteCarloService.cs",
+              "ToolTip": "C:\\pokerScrapper\\Interface\\IMonteCarloService.cs",
+              "RelativeToolTip": "Interface\\IMonteCarloService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T10:02:04.412Z",
+              "WhenOpened": "2026-09-26T10:15:39.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\pokerScrapper\\Models\\Card.cs",
-              "RelativeDocumentMoniker": "Models\\Card.cs",
-              "ToolTip": "C:\\pokerScrapper\\Models\\Card.cs",
-              "RelativeToolTip": "Models\\Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MonteCarloService.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Service\\MonteCarloService.cs",
+              "RelativeDocumentMoniker": "Service\\MonteCarloService.cs",
+              "ToolTip": "C:\\pokerScrapper\\Service\\MonteCarloService.cs",
+              "RelativeToolTip": "Service\\MonteCarloService.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAiwL8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T21:07:04.017Z",
+              "WhenOpened": "2026-09-26T10:15:53.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ICalculateService.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Interface\\ICalculateService.cs",
+              "RelativeDocumentMoniker": "Interface\\ICalculateService.cs",
+              "ToolTip": "C:\\pokerScrapper\\Interface\\ICalculateService.cs",
+              "RelativeToolTip": "Interface\\ICalculateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T10:01:04.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CardService.cs",
               "DocumentMoniker": "C:\\pokerScrapper\\Service\\CardService.cs",
               "RelativeDocumentMoniker": "Service\\CardService.cs",
               "ToolTip": "C:\\pokerScrapper\\Service\\CardService.cs",
               "RelativeToolTip": "Service\\CardService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowBQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T09:36:43.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
+              "Title": "CalculateService.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Service\\CalculateService.cs",
+              "RelativeDocumentMoniker": "Service\\CalculateService.cs",
+              "ToolTip": "C:\\pokerScrapper\\Service\\CalculateService.cs",
+              "RelativeToolTip": "Service\\CalculateService.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAAADMBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T10:02:04.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TableRepository.cs",
               "DocumentMoniker": "C:\\pokerScrapper\\Service\\TableRepository.cs",
               "RelativeDocumentMoniker": "Service\\TableRepository.cs",
@@ -304,7 +242,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
+              "Title": "CaptureDto.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Dto\\CaptureDto.cs",
+              "RelativeDocumentMoniker": "Dto\\CaptureDto.cs",
+              "ToolTip": "C:\\pokerScrapper\\Dto\\CaptureDto.cs",
+              "RelativeToolTip": "Dto\\CaptureDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T09:34:27.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CardDto.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Dto\\CardDto.cs",
+              "RelativeDocumentMoniker": "Dto\\CardDto.cs",
+              "ToolTip": "C:\\pokerScrapper\\Dto\\CardDto.cs",
+              "RelativeToolTip": "Dto\\CardDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T09:34:39.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICardService.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Interface\\ICardService.cs",
+              "RelativeDocumentMoniker": "Interface\\ICardService.cs",
+              "ToolTip": "C:\\pokerScrapper\\Interface\\ICardService.cs",
+              "RelativeToolTip": "Interface\\ICardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T09:36:26.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HandValue.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Models\\HandValue.cs",
+              "RelativeDocumentMoniker": "Models\\HandValue.cs",
+              "ToolTip": "C:\\pokerScrapper\\Models\\HandValue.cs",
+              "RelativeToolTip": "Models\\HandValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T10:01:32.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HandRank.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Models\\HandRank.cs",
+              "RelativeDocumentMoniker": "Models\\HandRank.cs",
+              "ToolTip": "C:\\pokerScrapper\\Models\\HandRank.cs",
+              "RelativeToolTip": "Models\\HandRank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T10:01:46.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\pokerScrapper\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "Models\\Card.cs",
+              "ToolTip": "C:\\pokerScrapper\\Models\\Card.cs",
+              "RelativeToolTip": "Models\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T21:07:04.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "trefl.png - PNG [42x37, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\TableTemplates\\trefl.png",
               "RelativeDocumentMoniker": "Templates\\TableTemplates\\trefl.png",
@@ -316,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "pik2.png - PNG [42x37, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\TableTemplates\\pik2.png",
               "RelativeDocumentMoniker": "Templates\\TableTemplates\\pik2.png",
@@ -328,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "pik.png - PNG [42x37, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\TableTemplates\\pik.png",
               "RelativeDocumentMoniker": "Templates\\TableTemplates\\pik.png",
@@ -340,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "kier.png - PNG [42x37, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\TableTemplates\\kier.png",
               "RelativeDocumentMoniker": "Templates\\TableTemplates\\kier.png",
@@ -352,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "karo.png - PNG [42x37, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\TableTemplates\\karo.png",
               "RelativeDocumentMoniker": "Templates\\TableTemplates\\karo.png",
@@ -364,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "trefl.png - PNG [39x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\SecoundCardTemplates\\trefl.png",
               "RelativeDocumentMoniker": "Templates\\SecoundCardTemplates\\trefl.png",
@@ -376,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "pik.png - PNG [39x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\SecoundCardTemplates\\pik.png",
               "RelativeDocumentMoniker": "Templates\\SecoundCardTemplates\\pik.png",
@@ -388,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "kier.png - PNG [39x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\SecoundCardTemplates\\kier.png",
               "RelativeDocumentMoniker": "Templates\\SecoundCardTemplates\\kier.png",
@@ -400,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "karo.png - PNG [39x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\SecoundCardTemplates\\karo.png",
               "RelativeDocumentMoniker": "Templates\\SecoundCardTemplates\\karo.png",
@@ -412,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "trefl.png - PNG [41x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\FirstCardTemplates\\trefl.png",
               "RelativeDocumentMoniker": "Templates\\FirstCardTemplates\\trefl.png",
@@ -424,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "pik.png - PNG [41x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\FirstCardTemplates\\pik.png",
               "RelativeDocumentMoniker": "Templates\\FirstCardTemplates\\pik.png",
@@ -436,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "kier.png - PNG [41x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\FirstCardTemplates\\kier.png",
               "RelativeDocumentMoniker": "Templates\\FirstCardTemplates\\kier.png",
@@ -448,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "karo.png - PNG [41x40, 32-bitowy, PNG]",
               "DocumentMoniker": "C:\\pokerScrapper\\Templates\\FirstCardTemplates\\karo.png",
               "RelativeDocumentMoniker": "Templates\\FirstCardTemplates\\karo.png",

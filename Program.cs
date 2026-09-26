@@ -13,6 +13,7 @@ builder.Services.AddScoped<ISnapshotRepository, SnapshotRepository>();
 builder.Services.AddScoped<ITableRepository, TableRepository>();
 builder.Services.AddScoped<ICardService, CardService>();
 builder.Services.AddScoped<ICalculateService, CalculateService>();
+builder.Services.AddScoped<IMonteCarloService, MonteCarloService>();
 builder.Services.AddControllers();
 var app = builder.Build();
 

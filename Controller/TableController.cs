@@ -11,11 +11,13 @@ namespace api.Controller
         private readonly ITableRepository _tableRepo;
         private readonly ICardService _cardService;
         private readonly ICalculateService _calculateService;
-        public TableController(ITableRepository tableRepo,ICardService cardService,ICalculateService calculateService)
+        private readonly IMonteCarloService _monteCarloService;
+        public TableController(ITableRepository tableRepo,ICardService cardService,ICalculateService calculateService, IMonteCarloService monteCarloService)
         {
             _tableRepo = tableRepo;
             _cardService = cardService;
             _calculateService = calculateService;
+            _monteCarloService = monteCarloService;
         }
 
         [HttpGet("CaptureTable")]
@@ -46,8 +48,8 @@ namespace api.Controller
         {
             var hand = _cardService.ParseCards(new[]
             {
-        "Qkaro",
-        "9karo"
+        "Akaro",
+        "APik"
     });
 
             var table = _cardService.ParseCards(new[]
@@ -64,6 +66,68 @@ namespace api.Controller
             var result = _calculateService.EvaluateBestHand(allCards);
 
             return Ok(result);
+        }
+        [HttpGet("TestMonteCarlo")]
+        public IActionResult TestMonteCarlo()
+        {
+            var hand = _cardService.ParseCards(new[]
+            {
+        "Akaro",
+        "APik"
+    });
+
+            var table = _cardService.ParseCards(new[]
+            {
+        "6karo",
+        "Jpik",
+        "7trefl",
+        "6pik",
+        "Kpik"
+    });
+
+            var chance = _monteCarloService.CalculateWinChance(
+                hand,
+                table,
+                100000
+            );
+
+            return Ok(new
+            {
+                ChanceOfWin = chance
+            });
+        }
+        [HttpGet("GetDecision")]
+        public IActionResult GetDecision(int pot, int toCall)
+        {
+            var tableCards = _tableRepo.GetTableCards();
+            var formattedTableCards = _cardService.ParseCards(tableCards);
+
+            var handCards = _tableRepo.GetHand();
+            var formattedHandCards = _cardService.ParseCards(handCards);
+
+            var chanceOfWin = _monteCarloService.CalculateWinChance(
+                formattedHandCards,
+                formattedTableCards,
+                100000
+            );
+
+            double potOdds = (double)toCall / (pot + toCall);
+
+            string action;
+
+            if (chanceOfWin < potOdds)
+                action = "Fold";
+            else if (chanceOfWin == potOdds && chanceOfWin < 0.7)
+                action = "Call";
+            else
+                action = "Raise";
+
+            return Ok(new
+            {
+                action,
+                ChanceOfWin = chanceOfWin,
+                PotOdds = potOdds
+            });
         }
     }
 }

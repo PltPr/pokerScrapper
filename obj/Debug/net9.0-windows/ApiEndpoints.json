@@ -63,6 +63,27 @@
   },
   {
     "ContainingType": "api.Controller.TableController",
+    "Method": "GetDecision",
+    "RelativePath": "api/Table/GetDecision",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pot",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "toCall",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.TableController",
     "Method": "GetMyHand",
     "RelativePath": "api/Table/GetMyHand",
     "HttpMethod": "GET",
@@ -85,6 +106,16 @@
     "ContainingType": "api.Controller.TableController",
     "Method": "TestCalculate",
     "RelativePath": "api/Table/TestCalculate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.TableController",
+    "Method": "TestMonteCarlo",
+    "RelativePath": "api/Table/TestMonteCarlo",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
