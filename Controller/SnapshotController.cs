@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using System.Windows.Forms;
-using System.Drawing.Imaging;
 using api.Interface;
+using Microsoft.AspNetCore.Mvc;
+using System.Drawing.Imaging;
 
 namespace api.Controller
 {
@@ -68,11 +63,11 @@ namespace api.Controller
 
             var projectFolder = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\"));
             var cardPath = Path.Combine(projectFolder, $"{name}.png");
-            var result = _snapshotRepo.RecognizeSymbol(cardPath,"First");
+            var result = _snapshotRepo.RecognizeSymbol(cardPath, "First");
 
             return Ok(result);
         }
-        
+
 
         [HttpGet("GetMyCards")]
         public IActionResult GetMyCards()
@@ -101,7 +96,7 @@ namespace api.Controller
             var card1symbolPath = Path.Combine(projectFolder, "card1symbol.png");
             card1symbolBmp.Save(card1symbolPath, ImageFormat.Png);
 
-            
+
             var secoundCardRegion = new Rectangle(687, 748, 39, 90);
             var secoundCardValue = new Rectangle(687, 748, 39, 50);
             var secoundCardSymbol = new Rectangle(684, 798, 39, 40);
@@ -117,7 +112,7 @@ namespace api.Controller
             using var card2symbolBmp = bmp.Clone(secoundCardSymbol, bmp.PixelFormat);
             var card2symbolPath = Path.Combine(projectFolder, "card2symbol.png");
             card2symbolBmp.Save(card2symbolPath, ImageFormat.Png);
-            
+
             return Ok();
         }
 

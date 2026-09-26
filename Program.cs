@@ -11,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISnapshotRepository, SnapshotRepository>();
 builder.Services.AddScoped<ITableRepository, TableRepository>();
+builder.Services.AddScoped<ICardService, CardService>();
+builder.Services.AddScoped<ICalculateService, CalculateService>();
 builder.Services.AddControllers();
 var app = builder.Build();
 

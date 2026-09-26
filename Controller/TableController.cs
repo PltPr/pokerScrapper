@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using api.Interface;
+using api.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controller
@@ -12,9 +9,13 @@ namespace api.Controller
     public class TableController : ControllerBase
     {
         private readonly ITableRepository _tableRepo;
-        public TableController(ITableRepository tableRepo)
+        private readonly ICardService _cardService;
+        private readonly ICalculateService _calculateService;
+        public TableController(ITableRepository tableRepo,ICardService cardService,ICalculateService calculateService)
         {
             _tableRepo = tableRepo;
+            _cardService = cardService;
+            _calculateService = calculateService;
         }
 
         [HttpGet("CaptureTable")]
@@ -28,15 +29,40 @@ namespace api.Controller
         [HttpGet("GetMyHand")]
         public IActionResult GetMyHand()
         {
-            var result = _tableRepo.GetHand();
-            var xd = _tableRepo.GetTableCards();
+            var cards = _tableRepo.GetHand();
+            var result = _cardService.ParseCards(cards);
 
             return Ok(result);
         }
         [HttpGet("GetTableCards")]
         public IActionResult GetTableCards()
         {
-            var result = _tableRepo.GetTableCards();
+            var cards = _tableRepo.GetTableCards();
+            var result = _cardService.ParseCards(cards);
+            return Ok(result);
+        }
+        [HttpGet("TestCalculate")]
+        public IActionResult TestCalculate()
+        {
+            var hand = _cardService.ParseCards(new[]
+            {
+        "Qkaro",
+        "9karo"
+    });
+
+            var table = _cardService.ParseCards(new[]
+            {
+        "6karo",
+        "Jpik",
+        "7trefl",
+        "6pik",
+        "Kpik"
+    });
+
+            var allCards = hand.Concat(table).ToList();
+
+            var result = _calculateService.EvaluateBestHand(allCards);
+
             return Ok(result);
         }
     }

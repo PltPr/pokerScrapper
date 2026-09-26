@@ -1,14 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Drawing.Imaging;
-using System.Drawing;
-using System.Linq;
-using System.Threading.Tasks;
 using api.Interface;
-using Tesseract;
-using System.Drawing.Imaging.Effects;
 using Emgu.CV;
 using Emgu.CV.Structure;
+using Tesseract;
 
 
 namespace api.Service
@@ -37,11 +30,15 @@ namespace api.Service
             var templates = new Dictionary<string, string>
             {
                 {"pik",Path.Combine(templateFolder,"pik.png")},
-                {"pik2",Path.Combine(templateFolder,"pik2.png")},
+
                 {"kier",Path.Combine(templateFolder,"kier.png")},
                 {"karo",Path.Combine(templateFolder,"karo.png")},
                 {"trefl",Path.Combine(templateFolder,"trefl.png")}
             };
+            if (type == "Table")
+            {
+                templates.Add("pik2", Path.Combine(templateFolder, "pik2.png"));
+            }
 
             string bestMatch = "";
             double maxScore = double.MinValue;
@@ -71,7 +68,7 @@ namespace api.Service
 
             var match = validator.FirstOrDefault(v => bestMatch.Contains(v));
 
-            
+
 
             return match ?? string.Empty;
         }
@@ -83,25 +80,35 @@ namespace api.Service
                 "eng",
                 EngineMode.Default
             );
-            ocr.SetVariable("tessedit_char_whitelist", "0123456789QKAJ");
+            ocr.SetVariable("tessedit_char_whitelist", "23456789QKAJ");
             using var pix = Pix.LoadFromFile(filePath);
 
             using var page = ocr.Process(pix, PageSegMode.SingleWord);
             string value = page.GetText().Trim();
 
-            value = value.Replace(" ", "").Replace("\n", "");
-            if (value == "0" || value == "1")
-                return string.Empty;
+            //value = value.Replace(" ", "").Replace("\n", "");
+            //if (value == "0" || value == "1")
+            //    return string.Empty;
 
             if (value.Length >= 2 && value != "10")
                 return value[0].ToString();
 
             if (!string.IsNullOrWhiteSpace(value))
-                {
-                    return value;
-                }
-            return string.Empty;
-            
+            {
+                return value;
+            }
+            return GetRandomCardValue();
+
         }
+         private string GetRandomCardValue()
+         {
+               string[] values =
+            {
+                "2", "3", "4", "5", "6", "7", "8", "9",
+                "10", "J", "Q", "K", "A"
+                };
+
+             return values[Random.Shared.Next(values.Length)];
+           }
     }
 }

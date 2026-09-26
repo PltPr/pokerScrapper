@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Threading.Tasks;
 using api.Dto;
 using api.Interface;
+using System.Drawing.Imaging;
 
 
 namespace api.Service
@@ -31,7 +27,7 @@ namespace api.Service
             }
 
             var projectFolder = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\"));
-            var filePath = Path.Combine(projectFolder,"table","ggpoker.png");
+            var filePath = Path.Combine(projectFolder, "table", "ggpoker.png");
 
             bmp.Save(filePath, ImageFormat.Png);
 
@@ -47,7 +43,7 @@ namespace api.Service
         public string[] GetHand()
         {
             var currFolder = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\"));
-            var screenshotPath = Path.Combine(currFolder,"table", "ggpoker.png");
+            var screenshotPath = Path.Combine(currFolder, "table", "ggpoker.png");
             var projectFolder = Path.Combine(currFolder, "table", "myhand");
 
             if (!System.IO.File.Exists(screenshotPath))
@@ -55,12 +51,12 @@ namespace api.Service
 
             using var bmp = new Bitmap(screenshotPath);
 
-            var bothCardsRect = new Rectangle(600,745,140,100);
+            var bothCardsRect = new Rectangle(600, 745, 140, 100);
             using var bothCardBmp = bmp.Clone(bothCardsRect, bmp.PixelFormat);
             var bothCardPath = Path.Combine(projectFolder, "bothcard.png");
             bothCardBmp.Save(bothCardPath, ImageFormat.Png);
 
-            
+
 
             var firstCardValue = new Rectangle(607, 753, 41, 52);
             var firstCardSymbol = new Rectangle(611, 801, 41, 40);

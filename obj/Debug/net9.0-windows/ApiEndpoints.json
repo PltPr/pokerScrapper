@@ -1,0 +1,94 @@
+[
+  {
+    "ContainingType": "api.Controller.SnapshotController",
+    "Method": "Capture",
+    "RelativePath": "api/Snapshot",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.SnapshotController",
+    "Method": "CheckCardSymbol",
+    "RelativePath": "api/Snapshot/CheckCardSymbol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.SnapshotController",
+    "Method": "CheckCardValue",
+    "RelativePath": "api/Snapshot/CheckCardValue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.SnapshotController",
+    "Method": "GetMyCards",
+    "RelativePath": "api/Snapshot/GetMyCards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.TableController",
+    "Method": "CaptureTable",
+    "RelativePath": "api/Table/CaptureTable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.TableController",
+    "Method": "GetMyHand",
+    "RelativePath": "api/Table/GetMyHand",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.TableController",
+    "Method": "GetTableCards",
+    "RelativePath": "api/Table/GetTableCards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controller.TableController",
+    "Method": "TestCalculate",
+    "RelativePath": "api/Table/TestCalculate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

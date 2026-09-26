@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using api.Dto;
 
 namespace api.Interface
@@ -11,6 +7,6 @@ namespace api.Interface
         Task<CaptureDto> CaptureTable();
         string[] GetHand();
         string[] GetTableCards();
-        
+
     }
 }

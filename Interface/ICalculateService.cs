@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using api.Models;
 
 namespace api.Interface
 {
     public interface ICalculateService
     {
-        Dictionary<string, decimal> MonteCarloCalculate();
+        HandValue EvaluateBestHand(List<Card> cards);
+        HandValue EvaluateFiveCards(List<Card> cards);
+        int CompareHands(HandValue first, HandValue second);
     }
 }
