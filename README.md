@@ -1,5 +1,5 @@
 <h1>
-  <img src="./poker.svg.svg" width=32 height="32" alt="">
+  <img src="./poker-wh.svg" width=32 height="32" alt="">
   PokerOdds
 </h1>
 
